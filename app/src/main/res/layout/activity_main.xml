@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:textAlignment="center"
+        android:layout_marginTop="20dp"
+        android:textSize="30sp"
+        android:textColor="#567"
+        android:layout_height="wrap_content"
+        android:text="Oling teligent"
+        android:id="@+id/txtTop"
+        android:gravity="center_horizontal">
+    </TextView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardtop"
+        android:layout_width="358dp"
+        android:layout_height="247dp"
+        android:layout_below="@+id/txtTop"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="30dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="103dp"
+                android:layout_height="49dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/ic_baseline_me">
+            </ImageView>
+
+            <TextView
+                android:id="@+id/oling"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Hello how are you">
+            </TextView>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardBot"
+        android:layout_width="358dp"
+        android:layout_height="247dp"
+        android:layout_below="@+id/cardtop"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="30dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="69dp"
+                android:layout_height="49dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/ic_baseline_me"></ImageView>
+
+            <TextView
+                android:id="@+id/me"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:text="My Assistant words">
+            </TextView>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="94dp"
+        android:layout_alignParentBottom="true">
+
+        <ImageView
+            android:id="@+id/mic"
+            android:layout_width="55dp"
+            android:layout_height="46dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_baseline_mic">
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mic"
+            android:layout_centerHorizontal="true"
+            android:text="Tap to record"></TextView>
+    </RelativeLayout>
+</RelativeLayout>
